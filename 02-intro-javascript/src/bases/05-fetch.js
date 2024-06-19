@@ -1,4 +1,4 @@
-const apiKey = '';
+import { apiKey } from "../const-protected";
 
 const petition = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`);
 
