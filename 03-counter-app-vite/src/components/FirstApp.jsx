@@ -26,7 +26,7 @@ export default function FirstApp({ title, subtitle }) {
 }
 
 FirstApp.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subtitle: PropTypes.string
 }
 
