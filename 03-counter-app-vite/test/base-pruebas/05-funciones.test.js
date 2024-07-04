@@ -9,16 +9,20 @@ describe('Pruebas en 05-funciones.test.js', () => {
 
     const userTest = getUser()
 
+    // * Con toEqual se usa para comparar objetos
     expect(userTest).toEqual(objectUser)
   });
 
   test('getUsuarioActivo debe retornar un objeto con el nombre enviado', () => {
+
+    const name = 'Leonardo'
+
     const objectUser = {
       uid: 'ABC567',
-      username: 'Leonardo'
+      username: name
     }
 
-    const userTest = getUsuarioActivo('Leonardo')
+    const userTest = getUsuarioActivo(name)
 
     expect(userTest).toEqual(objectUser)
   });

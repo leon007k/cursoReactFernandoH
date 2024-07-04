@@ -14,12 +14,12 @@ export function CounterApp({ value }) {
   return (
     <>
       <h1>CounterApp</h1>
-      <h2> Incrementa: {counter} </h2>
+      <h2 id='heading-increment'>Incrementa: {counter}</h2>
       <p>Toca el boton, para incrementar el valor </p>
 
-      <button onClick={handleClickIncrementCounter}> +1 </button>
-      <button onClick={handleClickDecrementCounter}> -1 </button>
-      <button onClick={handleClickResetCounter}> Reset </button>
+      <button aria-label='btn-increment' onClick={handleClickIncrementCounter}> +1 </button>
+      <button aria-label='btn-decrement' onClick={handleClickDecrementCounter}> -1 </button>
+      <button aria-label='btn-reset' onClick={handleClickResetCounter}> Reset </button>
     </>
   )
 }
