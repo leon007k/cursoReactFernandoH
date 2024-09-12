@@ -15,7 +15,8 @@ input {
   font-size: 1.2rem;
   outline: none;
   padding: 10px 15px;
-  width: 100%;
+  width: 85%;
+  flex: 1 1 auto;
 }
 
 h2 {
@@ -25,6 +26,13 @@ h2 {
 h3 {
   font-size: 3rem;
   margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .card-grid {
@@ -60,4 +68,26 @@ h3 {
 
 .card img {
   width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 3px;
+  text-align: center;
+  border-color: #0043a6;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  -ms-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #1d74f5;
+  color: #ebebeb;
 }

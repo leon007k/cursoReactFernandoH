@@ -26,6 +26,7 @@ export function AddCategory({ onNewCategories }) {
         value={inputValue}
         onChange={handleInputChange}
       />
+      <button className='btn' onClick={handleOnSubmit}>Agregar</button>
     </form>
   )
 }
