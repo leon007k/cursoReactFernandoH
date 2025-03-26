@@ -11,6 +11,6 @@ export function GridItem({ title, url }) {
 }
 
 GridItem.propTypes = {
-  title: PropTypes.string,
-  url: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }

@@ -19,7 +19,7 @@ export function AddCategory({ onNewCategories }) {
   }
 
   return (
-    <form onSubmit={handleOnSubmit}>
+    <form onSubmit={handleOnSubmit} aria-label='form'>
       <input
         type="text"
         placeholder="Agregar categoria"
@@ -32,5 +32,5 @@ export function AddCategory({ onNewCategories }) {
 }
 
 AddCategory.propTypes = {
-  onNewCategories: PropTypes.func,
+  onNewCategories: PropTypes.func.isRequired,
 }
